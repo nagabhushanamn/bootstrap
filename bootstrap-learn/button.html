@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - learn</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+      
+    <div class="container-fluid">
+      
+    <div class="page-header"> buttons </div>  
+    
+    <button type="button" class="btn btn-default"> default </button>
+    <button type="button" class="btn btn-primary"> primary </button>
+    <button type="button" class="btn btn-success"> success </button>
+    
+    <button type="button" class="btn btn-link"> Link </button>
+    
+    <hr/>
+    
+    <button type="button" class="btn btn-primary btn-xs"> action </button>
+    
+    <hr/>
+    
+    <button type="button" class="btn btn-primary btn-xs btn-block"> action </button>
+     <hr/>
+    
+    <button type="button" class="btn btn-primary btn-xs active"> Active </button>
+    <button type="button" class="btn btn-primary btn-xs disabled"> Disabled </button>
+    
+    <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+    
+    <hr/>
+    
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+    
+    <hr/>
+    
+      <div class="btn-group-vertical" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+
+        <div class="btn-group" role="group">
+          <button type="button" 
+                  class="btn btn-default dropdown-toggle" 
+                  data-toggle="dropdown">
+            Dropdown <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+    </div>
+    
+    <!-- Single button -->
+    <div class="btn-group">
+      <button type="button" 
+              class="btn btn-primary" data-toggle="dropdown">
+        Action <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-2.2.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+   
+  </body>
+</html>

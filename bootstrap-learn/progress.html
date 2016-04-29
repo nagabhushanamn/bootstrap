@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - learn</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+      
+    <div class="container-fluid">
+      <div class="progress">
+        <div id="pb" class="progress-bar" style="width:0%">
+          <span class="sr-only">60% Complete</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-2.2.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      var pbEle=document.querySelector('#pb');
+      var i=10;
+      var interval=setInterval(function(){
+        pbEle.style.width=i+"%";
+        i+=10;
+        if(i===100){
+          interval.clearInterval();
+        }
+      },1000);
+    </script>
+   
+  </body>
+</html>
